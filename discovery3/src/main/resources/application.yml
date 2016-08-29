@@ -1,0 +1,16 @@
+server:
+  port: 8763
+
+eureka:
+  instance:
+    hostname: peer3
+    leaseRenewalIntervalInSeconds: 3
+  client:
+    serviceUrl:
+        defaultZone: http://${eureka.host:peer1}:${eureka.port:8761}/eureka/
+#        peer1: http://${eureka.host:peer1}:${eureka.port:8761}/eureka/
+        peer2: http://${eureka.host:peer2}:${eureka.port:8762}/eureka/
+  server:
+     waitTimeInMsWhenSyncEmpty: 0
+#    register-with-eureka: false
+#    fetch-registry: false

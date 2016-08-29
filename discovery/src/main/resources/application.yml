@@ -1,0 +1,26 @@
+server:
+  port: 8761
+
+
+eureka:
+  instance:
+    hostname: peer1
+    leaseRenewalIntervalInSeconds: 3
+  client:
+#    serviceUrl:
+#        defaultZone: http://${eureka.host:peer2}:${eureka.port:8762}/eureka/ #5
+#        peer3: http://${eureka.host:peer3}:${eureka.port:8763}/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+spring:
+  application:
+    name: discoveryAndBus
+  rabbitmq:
+    host:  120.24.38.68
+    username: guest
+    password:  guest
+    port: 5672
+  cloud:
+    bus:
+      trace: true
+

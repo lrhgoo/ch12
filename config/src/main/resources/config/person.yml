@@ -1,0 +1,9 @@
+spring:
+  jpa:
+    database: MYSQL
+  datasource:
+    platform: org.hibernate.dialect.MySQL5Dialect
+    url: jdbc:mysql://120.24.38.68:3306/sb?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: mysql@mind2068
+    driver-class-name: com.mysql.jdbc.Driver

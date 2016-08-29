@@ -1,0 +1,9 @@
+server:
+  port: 8084
+
+spring:
+  rabbitmq:
+     host:  120.24.38.68
+     username: guest
+     password:  guest
+     port: 5672
